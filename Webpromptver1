@@ -1,0 +1,745 @@
+Design a modern, highly intuitive responsive web platform called “ReGround”.
+
+ReGround is a planning-stage excavated-soil routing, verification and local reuse platform for New Zealand construction and earthworks projects.
+
+The platform has TWO primary user groups:
+
+1. SUPPLY SIDE
+Civil contractors, earthworks contractors, developers, councils and infrastructure project teams that generate surplus excavated soil.
+
+Their key goals are:
+- know where surplus soil will go before excavation starts
+- reduce disposal and transport costs
+- avoid programme delays
+- identify nearby receivers
+- compare reuse versus disposal routes
+- see whether the required testing and approvals are complete
+- keep a fallback disposal route available
+
+2. DEMAND SIDE
+Construction companies, landscapers, earthworks projects, soil processors and local infrastructure projects that need soil, sand, clay, gravel or other excavated material.
+
+Their key goals are:
+- quickly find suitable materials nearby
+- filter by material type, volume, location, date and specification
+- understand material quality and verification status
+- see testing and supporting documents
+- compare transport distance and cost
+- request or reserve suitable material
+- know whether the material matches their acceptance criteria
+
+IMPORTANT UX PRINCIPLE:
+This is a professional B2B/B2G system, but it should feel as easy to use as Airbnb, Trade Me or a modern logistics marketplace.
+
+Avoid complex engineering-software aesthetics.
+
+Use:
+- large readable typography
+- simple cards
+- clear status indicators
+- map-based discovery
+- progressive disclosure
+- minimal technical language on the first layer
+- more detailed technical information only when the user expands a material profile
+- strong visual hierarchy
+- clear primary call-to-action buttons
+- mobile and desktop responsive layouts
+
+BRAND:
+Name: ReGround
+
+Tagline:
+“Know where your soil is going before you dig.”
+
+Alternative commercial message:
+“Reduce soil-management cost without adding programme risk.”
+
+Visual style:
+- clean New Zealand infrastructure / environmental technology aesthetic
+- premium but practical
+- soft white / warm grey backgrounds
+- deep forest green
+- muted earth brown / clay accents
+- dark charcoal typography
+- subtle blue-green map colours
+- rounded cards
+- generous whitespace
+- simple line icons
+- professional photography of construction, earthworks, soil and local landscapes
+- avoid overly futuristic AI visuals
+- avoid excessive gradients
+- avoid dark dashboard-heavy interfaces
+
+The product should visually communicate:
+planning → verification → matching → transport → local reuse.
+
+--------------------------------------------------
+GLOBAL NAVIGATION
+--------------------------------------------------
+
+Top navigation:
+
+ReGround logo
+
+Find Material
+List Surplus
+Projects
+Map
+Impact
+How It Works
+
+Right side:
+Notifications
+Help
+Profile
+
+Primary button:
+“List Surplus”
+
+For users identified as buyers, change the primary CTA to:
+“Find Material”
+
+--------------------------------------------------
+HOME / LANDING DASHBOARD
+--------------------------------------------------
+
+Create a personalised dashboard that immediately asks:
+
+“What do you need to do today?”
+
+Two large cards:
+
+A. I HAVE SURPLUS MATERIAL
+“Find a local destination before excavation begins.”
+
+Button:
+List Surplus
+
+B. I NEED MATERIAL
+“Find verified local material near your project.”
+
+Button:
+Find Material
+
+Below this show:
+
+Active Projects
+Potential Matches
+Material Awaiting Verification
+Upcoming Excavation Dates
+Estimated Cost Saving
+Avoided Transport Distance
+
+Use simple visual cards instead of complicated graphs.
+
+--------------------------------------------------
+SUPPLIER JOURNEY
+--------------------------------------------------
+
+Create a supplier workflow with six simple stages.
+
+STEP 1 — Project
+
+Project name
+Location
+Excavation date
+Estimated surplus volume
+Upload cut/fill plan
+Upload geotechnical report
+
+Show map location.
+
+STEP 2 — Material
+
+Expected material:
+Topsoil
+Clay
+Silt
+Sand
+Gravel
+Rock
+Mixed soil
+
+Estimated quantity
+
+Optional:
+Moisture
+Particle size
+Engineering classification
+
+Keep advanced fields collapsed initially.
+
+STEP 3 — Evidence
+
+Create a visual evidence checklist:
+
+Site history / HAIL
+Geotechnical evidence
+Contamination testing
+Laboratory results
+Receiver-specific tests
+Professional review
+
+Use simple status chips:
+
+Verified
+Available
+Required
+Pending
+Not Applicable
+
+Never imply that ReGround legally certifies the soil.
+
+Show:
+“Final acceptance remains with the receiving party.”
+
+STEP 4 — Find Routes
+
+Show a map with nearby receivers.
+
+Every match should appear as an intuitive card.
+
+Example:
+
+Construction Site B
+8 km away
+
+Needs:
+300 t sandy fill
+
+Timing:
+15–22 October
+
+Potential compatibility:
+High
+
+Estimated transport:
+$8,400
+
+Estimated total route cost:
+$14,600
+
+Compared with baseline disposal:
+Save approximately $21,400
+
+Button:
+View Route
+
+Second card:
+
+Landscape Project
+14 km away
+
+Needs:
+200 t topsoil
+
+Compatibility:
+Medium
+
+Additional test required
+
+Button:
+Review Requirements
+
+Third card:
+
+Existing Cleanfill
+71 km away
+
+Fallback route
+
+Known acceptance pathway
+
+Button:
+Keep as Fallback
+
+IMPORTANT:
+Visually distinguish:
+
+PRIMARY REUSE ROUTE
+ALTERNATIVE ROUTE
+FALLBACK DISPOSAL ROUTE
+
+Do not visually frame disposal as a failure.
+It is a risk-management fallback.
+
+STEP 5 — Conditional Acceptance
+
+Create a page showing the receiver’s acceptance envelope.
+
+Material:
+Sandy fill
+
+Volume:
+300 t
+
+Required:
+Particle size ✓
+Moisture range ✓
+Contamination report ✓
+Oversize limit ✓
+Geotechnical evidence ✓
+
+Status:
+
+CONDITIONALLY ACCEPTED
+
+Message:
+“Final batch conformance will be checked during excavation.”
+
+STEP 6 — Live Excavation / ReGround Unit
+
+Design a connection between the physical ReGround machine and web platform.
+
+Show:
+
+Batch 0217
+
+Mass:
+18.4 t
+
+Moisture:
+14%
+
+Fine:
+42%
+
+Sand:
+38%
+
+Gravel:
+20%
+
+Visual consistency:
+Pass
+
+Receiver profile:
+Construction Site B
+
+Large status:
+
+PASS
+Ready for approved route
+
+Other possible states:
+
+HOLD
+Review required
+
+FAIL
+Route to alternative destination
+
+Show live progress:
+
+420 t planned
+248 t verified
+220 t delivered
+
+--------------------------------------------------
+BUYER JOURNEY
+--------------------------------------------------
+
+The buyer experience should feel like a modern marketplace.
+
+Main search bar:
+
+“What material do you need?”
+
+Location
+Material
+Quantity
+Required date
+
+Search
+
+Example:
+Sand
+300 tonnes
+Auckland
+15–22 October
+
+--------------------------------------------------
+MARKETPLACE SEARCH RESULTS
+--------------------------------------------------
+
+Use a split view:
+
+LEFT:
+Material cards
+
+RIGHT:
+Interactive map
+
+Each material card should show only the most important information.
+
+Example:
+
+420 t Sandy Soil
+
+Warkworth, Auckland
+
+8 km from your project
+
+Available:
+14–18 October
+
+Status:
+Verified profile available
+
+Estimated delivered cost:
+$XX / tonne
+
+Quick tags:
+
+Sand dominant
+Test report
+Geotech data
+Local source
+
+Button:
+View Material
+
+Do NOT expose too much laboratory data on the search page.
+
+--------------------------------------------------
+MATERIAL PROFILE PAGE
+--------------------------------------------------
+
+Create a detailed but easy-to-read material profile.
+
+Top section:
+
+420 tonnes
+Sandy Soil
+
+Warkworth Site A
+
+Available:
+14–18 October
+
+Distance:
+8 km
+
+Main CTA:
+“Request Material”
+
+Secondary:
+“Ask a Question”
+
+Create tabs:
+
+Overview
+Material Data
+Evidence
+Transport
+Source
+Documents
+
+OVERVIEW:
+
+Material:
+Sandy soil
+
+Volume:
+420 t
+
+Typical use possibilities:
+Fill
+Landscaping
+Earthworks
+
+Do not claim a use is approved unless the receiver has approved it.
+
+Use wording:
+“Potential uses subject to project requirements.”
+
+--------------------------------------------------
+FIT-FOR-USE SYSTEM
+--------------------------------------------------
+
+Do not classify material as simply:
+
+Good Soil
+Bad Soil
+
+Instead create a “Fit for Use” system.
+
+Use four states:
+
+1. FIT FOR HIGHER-VALUE USE
+Meets selected receiver requirements
+
+Green
+
+2. FIT FOR ALTERNATIVE USE
+May suit other markets
+
+Blue-green
+
+3. ADDITIONAL TESTING / PROCESSING REQUIRED
+Needs more evidence or treatment
+
+Amber
+
+4. SPECIALIST ROUTE REQUIRED
+Not suitable for current reuse routes
+
+Red
+
+Possible destinations should appear below:
+
+Construction fill
+Landscape
+Site restoration
+Non-structural products
+Soil processor
+Managed fill
+Cleanfill
+Specialist disposal
+
+--------------------------------------------------
+ROUTE COMPARISON PAGE
+--------------------------------------------------
+
+This is one of the most important ReGround screens.
+
+Title:
+
+“Compare Soil Routes”
+
+Display three options side-by-side.
+
+OPTION A
+
+Local Reuse
+
+Construction Site B
+
+Distance:
+8 km
+
+Estimated total:
+$31,000
+
+Status:
+Conditional acceptance
+
+Potential saving:
+$39,000
+
+OPTION B
+
+Alternative Reuse
+
+Landscape Project
+
+Distance:
+17 km
+
+Estimated total:
+$38,000
+
+Additional testing required
+
+OPTION C
+
+Existing Disposal
+
+Cleanfill
+
+Distance:
+70 km
+
+Estimated total:
+$70,000
+
+Known route
+
+Label:
+Fallback
+
+Make it immediately obvious that ReGround is helping the contractor compare:
+
+Cost
+Distance
+Timing
+Approval status
+Programme risk
+
+Use one simple “Recommended Route” label only when rules and receiver acceptance justify it.
+Do not suggest that ReGround legally approves the route.
+
+--------------------------------------------------
+PLANNING TIMELINE
+--------------------------------------------------
+
+Create a horizontal project timeline:
+
+PLAN
+→ Forecast Surplus
+→ Search Demand
+→ Receiver Requirements
+→ Conditional Acceptance
+→ Excavation
+→ Verify
+→ Direct Haul
+→ Complete
+
+Highlight that most technical and commercial coordination occurs BEFORE excavation.
+
+Use the message:
+
+“Move uncertainty out of the excavation critical path.”
+
+--------------------------------------------------
+IMPACT PAGE
+--------------------------------------------------
+
+Create a simple project impact page.
+
+Show:
+
+Material diverted from disposal:
+820 t
+
+Avoided transport:
+11,400 tonne-km
+
+Estimated transport CO₂e:
+XX t
+
+Estimated cost saving:
+$42,600
+
+Virgin material potentially displaced:
+610 t
+
+Local reuse rate:
+78%
+
+Use simple cards and one or two clear charts.
+
+Avoid greenwashing language.
+
+Label calculated metrics clearly as:
+
+Actual
+Estimated
+Scenario
+
+--------------------------------------------------
+PROJECT STATUS SYSTEM
+--------------------------------------------------
+
+Use a very simple status language across the platform.
+
+PLANNING
+MATCH FOUND
+EVIDENCE REQUIRED
+CONDITIONALLY ACCEPTED
+READY FOR EXCAVATION
+PASS
+HOLD
+ALTERNATIVE ROUTE
+COMPLETED
+
+Each status should have a distinct icon and colour.
+
+--------------------------------------------------
+DESIGN FOR TWO DIFFERENT USER MINDSETS
+--------------------------------------------------
+
+SUPPLIER thinks:
+
+“Where will this soil go?”
+
+“Will it cost less?”
+
+“Will it delay excavation?”
+
+“Do I have a fallback?”
+
+Therefore supplier screens should prioritise:
+
+Destination
+Cost
+Timing
+Approval status
+Fallback
+
+BUYER thinks:
+
+“Can I use this material?”
+
+“Is it close?”
+
+“Is it available when I need it?”
+
+“Do I have enough evidence?”
+
+Therefore buyer screens should prioritise:
+
+Material type
+Quantity
+Distance
+Availability
+Specification
+Evidence
+
+--------------------------------------------------
+IMPORTANT SAFETY / REGULATORY UX
+--------------------------------------------------
+
+Never display:
+
+“Certified Safe by ReGround”
+
+Instead use:
+
+“Test evidence available”
+
+“Receiver requirements met”
+
+“Conditionally accepted”
+
+“Professional review completed”
+
+“Additional verification required”
+
+Include a persistent information tooltip:
+
+“ReGround supports material routing and conformance verification. Final regulatory, engineering and receiving-site approvals remain with the relevant professionals and receiving party.”
+
+--------------------------------------------------
+FINAL UX GOAL
+--------------------------------------------------
+
+The platform should make a complicated soil-management process feel simple.
+
+A user should be able to understand within 5 seconds:
+
+1. What material exists
+2. Where it is
+3. How much exists
+4. When it is available
+5. Who could use it
+6. Whether requirements are complete
+7. How much the route costs
+8. What the fallback option is
+
+The emotional experience should be:
+
+certainty
+clarity
+control
+lower project risk
+
+not:
+
+environmental activism
+complex engineering software
+waste-management bureaucracy
+
+The website should communicate:
+
+“ReGround gives construction teams a ready-to-manage soil pathway before excavation begins.”
