@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head><!--
+Embedded MapLibre GL JS 4.7.1 license notice:
+Copyright (c) 2023, MapLibre contributors
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+    * Neither the name of MapLibre GL JS nor the names of its contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+-------------------------------------------------------------------------------
+
+Contains code from mapbox-gl-js v1.13 and earlier
+
+Version v1.13 of mapbox-gl-js and earlier are licensed under a BSD-3-Clause license
+
+Copyright (c) 2020, Mapbox
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+* Neither the name of Mapbox GL JS nor the names of its contributors
+  may be used to endorse or promote products derived from this software
+  without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+-------------------------------------------------------------------------------
+
+Contains code from glfx.js
+
+Copyright (C) 2011 by Evan Wallace
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+
+Contains a portion of d3-color https://github.com/d3/d3-color
+
+Copyright 2010-2016 Mike Bostock
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the author nor the names of contributors may be used to
+  endorse or promote products derived from this software without specific prior
+  written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+--><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ReGround | The case for local soil reuse</title><meta name="theme-color" content="#18372e"><link rel="stylesheet" href="assets/maplibre-gl.css"><link rel="stylesheet" href="styles.css"></head><body><header><div class="brand">ReGround</div><div class="header-note">Auckland pilot · Climate Hackathon 2026</div></header><main><section class="intro"><div><div class="eyebrow">Why this problem matters</div><h1>Good soil deserves<br>a closer destination.</h1></div><p>Usable excavated soil can become waste when its next destination is planned too late. ReGround matches suitable surplus with nearby demand <strong>before the dig.</strong></p></section>
+<div class="steps" role="group" aria-label="Explore the case for local soil reuse"><button data-mode="soil" aria-pressed="true"><span class="stepnum">01</span> The problem: soil to disposal</button><button data-mode="distance" aria-pressed="false"><span class="stepnum">02</span> The opportunity: shorter trips</button><button data-mode="emissions" aria-pressed="false"><span class="stepnum">03</span> The impact: lower emissions</button></div>
+<section class="stage" id="stage" aria-label="Interactive 3D map of the Auckland soil reuse scenario"><div id="map" aria-label="Auckland geographic map with scenario comparison columns"></div><div class="story-card"><div class="eyebrow" id="modeTag">01 / Auckland soil scenario</div><h2 id="storyTitle"></h2><p id="storyText"></p><div class="pair"><div class="pair-row"><span class="label"><i class="swatch"></i><span id="firstLabel"></span></span><strong id="firstValue"></strong></div><div class="pair-row"><span class="label"><i class="swatch blue"></i><span id="secondLabel"></span></span><strong id="secondValue"></strong></div></div><div class="legendnote" id="legendnote"></div></div><div class="map-tools"><button id="auckland" aria-pressed="true">Auckland close-up</button><button id="national" aria-pressed="false">New Zealand</button><button id="tilt" aria-pressed="true">3D view</button><button id="reset">Reset view</button></div><div class="location">Tāmaki Makaurau / Auckland</div><div class="status" id="status" role="status">Loading geographic map…</div><div class="inset"><div id="locator" aria-label="New Zealand locator map"></div><span class="inset-label">AOTEAROA / NZ</span><button id="locatorButton">View New Zealand</button></div><div class="timeline"><button id="play" aria-pressed="false" aria-label="Play annual scenario">Play</button><div class="rangearea"><output class="yearbig" id="year" for="slider">2035</output><div class="rangewrap"><label for="slider"><span>2026 baseline</span><span>2035 scenario</span></label><input id="slider" type="range" min="2026" max="2035" value="2035" step="1" aria-label="Scenario year"></div></div><span class="timeline-hint">Drag year · hover or click a column<br>Drag map · right-drag to rotate</span></div><div class="map-note">Auckland-wide totals. Column positions are display anchors; heights are a scaled comparison, not building heights.</div><div class="fallback"><h2>3D mapping needs WebGL</h2><p>This browser could not start the geographic map. Scenario figures below remain available. Open this HTML in a recent browser with graphics acceleration enabled.</p></div></section>
+<section class="metrics" aria-label="Selected year scenario results"><div class="metric"><div class="eyebrow">Auckland soil generated</div><div class="value" id="total"></div><p>Modelled annual excavated soil</p></div><div class="metric"><div class="eyebrow">Local reuse opportunity</div><div class="value" id="reuse"></div><p id="share"></p></div><div class="metric"><div class="eyebrow">Transport emissions avoided</div><div class="value" id="saved"></div><p id="reduction"></p></div></section>
+<section class="why"><div><div class="eyebrow">Why we chose this topic</div><h2>The material exists.<br>The missing piece is coordination.</h2><p>Our project starts with an Auckland baseline of approximately 2 million tonnes of excavated soil annually. Matching material, quantity, timing and acceptance criteria early creates a practical pathway to local reuse.</p></div><div class="beforeafter"><div class="route"><strong>THE REACTIVE ROUTE</strong><p>Excavate<br>Discover surplus<br>Search under time pressure<br>Reuse or disposal</p></div><div class="route better"><strong>THE REGROUND ROUTE</strong><p>Forecast & match<br>Agree acceptance criteria<br>Dig & verify the batch<br>Route suitable soil to reuse</p></div></div></section>
+<details class="sources"><summary>Data, assumptions & map sources</summary><p><strong>Scope:</strong> Auckland only. The repository provides an annual scenario, not site-level or nationwide measurements. Comparison columns are anchored together near Auckland for readability; their footprints do not represent project sites. No district-level soil values are inferred.</p><p><strong>Calculation:</strong> annual soil = 2,000,000 × 1.012^(year − 2026). Reuse share rises linearly from 1% in 2026 to 10% in 2035. Disposal route: 92 km; reuse route: 12 km; emissions factor: 0.105 kg CO₂-e / tonne-km. Avoided transport emissions = reused tonnes × (92 − 12) × 0.105 / 1,000. This covers transport only. The 15% global benchmark in the source is not the assumed ReGround target.</p><p><strong>Sources:</strong> <a href="https://github.com/Wellyboys/climate-hacktion-2026/blob/main/README.md" target="_blank" rel="noopener">Project rationale</a> · <a href="https://github.com/Wellyboys/climate-hacktion-2026/blob/main/Hackaton%20Project.Rmd" target="_blank" rel="noopener">Original scenario model</a> · <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth geographic boundaries</a>. Map engine: MapLibre GL JS 4.7.1 (BSD-3-Clause). Street tiles: © OpenStreetMap contributors. The geographic outline and map engine are embedded; street detail requires internet. Actual reuse requires project-specific verification and receiver acceptance.</p></details></main>
+<script src="assets/maplibre-gl.js"></script><script src="data/nz-boundary.js"></script>
+<script src="app.js"></script></body></html>
